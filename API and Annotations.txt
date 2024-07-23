@@ -1,0 +1,36 @@
+Q3 - what is the difference between collections and streams ? give an example
+
+ANS - Collections and Streams in Java serve different purposes when working with data. Here's a breakdown of their key differences along with an example:
+
+Collections:
+
+Data Structure: Collections are in-memory data structures that hold and manage a group of objects. They provide various functionalities like adding, removing, searching, and sorting elements. Common collection types include lists, sets, and maps.
+Storage: Elements are stored directly within the collection itself.
+Operations: Operations are performed directly on the elements within the collection. These operations can modify the collection (e.g., adding or removing elements).
+State: Collections can be modified (stateful). You can add, remove, or change elements after the collection is created.
+Example: Imagine a shopping cart represented as an ArrayList. You can add items (products) to the cart, remove them, and check the total number of items.
+Streams:
+
+Data Source: Streams are not data structures themselves. They represent a sequence of elements that can come from various sources like collections, arrays, or I/O operations. Streams process the elements in a single pass.
+Operations: Streams provide a set of operations for manipulating data declaratively. These operations don't modify the original data source. Instead, they create a new stream with the results. Common operations include filtering, mapping, and reducing.
+State: Streams are immutable (stateless). Once a stream is created and operations are applied, it cannot be modified. You can chain multiple operations together to create a processing pipeline.
+Example: Imagine processing the items in your shopping cart (an ArrayList) to calculate the total price. You can use a stream to filter for specific items (e.g., discounted items), then map each item to its price, and finally reduce them to a sum (total price).
+Analogy:
+
+Think of a collection like a shopping cart where you physically hold and manipulate the items.
+Think of a stream like a conveyor belt where items are processed one by one as they move along the belt. You can't reach back and modify items that have already passed a specific point on the belt.
+
+Q4 - What is enums in java ? explain with an example.
+
+ANS - In Java, enums (enumerations) are a special kind of class that represent a fixed set of constants. These constants are typically named in all uppercase letters to indicate their special nature. Here's a breakdown of enums with an example:
+
+ * Enums used -
+
+Representing Fixed Choices: Enums are ideal for situations where you have a predefined set of possible values, such as days of the week, compass directions, or clothing sizes.
+Improved Readability and Type Safety: Using enums makes your code more readable and easier to understand compared to using raw integer constants. It also enforces type safety, preventing accidental assignment of invalid values.
+Additional Functionality: Enums can have constructors, methods, and implement interfaces, allowing you to add custom logic associated with each constant value.
+example is attached below (enum1.java)
+
+@5 - what is inbuilt annotations in java ?
+
+ANS - Inbuilt annotations, also known as standard annotations, are special markers you can add to your Java code to provide additional information for the compiler and runtime environment. These annotations don't change the program's execution flow but enhance its behavior or provide metadata.
